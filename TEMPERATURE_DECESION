@@ -1,0 +1,6 @@
+temperature = int(input("Enter Temperature"))
+
+if temperature <= 32:
+    print ("Below Freezing Point")
+else: 
+    print ("Above Freezing Point")
