@@ -1,0 +1,29 @@
+#Step 1 - Ask for user for their data
+employee_name = input("Enter Name: ")
+monthly_salary = float(input("Enter Monthly Salary: "))
+years_service = int(input("Enter Years of Service: "))
+
+#Step 2 - To get bonus, multiply monthly_salary by 0.10
+bonus = monthly_salary * 0.10
+
+"""
+Step 3 - Use an if statement to check if the employee
+has 5 years and up experience of service to recieve the bonus
+if true it gives them 10% bonus; if false no bonus given
+"""
+
+if years_service >= 5:
+    bonus = monthly_salary * 0.10
+else:
+    bonus = 0.0 
+
+#Step 4 - Convert float "monthly_salary" into an integer
+integer_salary = int(monthly_salary)
+
+#Step 5 - Print all information in a format
+print ("\n---Employee Information---")
+print (f"Name: {employee_name}")
+print (f"Monthly Salary: {monthly_salary}")
+print (f"Years of Service: {years_service}")
+print (f"Bonus: {bonus}")
+print (f"Monthly Salary (Integer Form): {integer_salary}")
