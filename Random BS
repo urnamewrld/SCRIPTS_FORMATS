@@ -1,0 +1,35 @@
+"""
+Pacumbala, Vincent Jace E. 
+11 - Sincerty 
+Sept 16, 2025
+Practical Examination - Midterms
+"""
+
+customer_name = input("Enter customer name: ")
+product_1 = input("Product name: ")
+price_1 = float(input("Enter price: "))
+product_2 = input("Product name: ")
+price_2 = float(input("Enter price: "))
+product_3 = input("Product name: ")
+price_3 = float(input("Enter price: "))
+
+total_price = price_1+price_2+price_3
+
+if total_price >= 1000:
+    discount = total_price * 0.10
+else:
+    discount = 0.0
+    
+total_amount = total_price - discount
+
+integer_total_price = int(total_price)
+
+print ("\n---Customer Receipt---")
+print (f"Name: {customer_name}")
+print (f"Product 1: {product_1}")
+print (f"Price 1: {price_1}")
+print (f"Product 2: {product_2}")
+print (f"Price 2: {price_2}")
+print (f"Product 3: {product_3}")
+print (f"Price 3: {price_3}")
+print (f"Total Amount: {total_amount}")
