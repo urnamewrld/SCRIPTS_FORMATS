@@ -1,0 +1,30 @@
+quiz_grade = float(input("Enter Grade: "))
+exam_grade = float(input("Enter Grade: "))
+
+total_score = quiz_grade + exam_grade
+average_score = total_score / 2 
+
+grade = quiz_grade == exam_grade
+exam = exam_grade > quiz_grade
+passing = average_score >= 75
+
+passed = quiz_grade >= 75 and exam_grade >= 75
+failed = quiz_grade < 75 or exam_grade < 75
+notperfect = not(average_score == 100)
+
+bonus = 5
+bonus_2 = bonus + 2
+bonus_3 = bonus * 3
+bonus_4 = bonus - 1
+
+print(f"Total Score: {total_score}")
+print(f"Average Score: {average_score}")
+
+print(f"Are both grades eqaul? {grade}")
+print(f"Is the exam higher than the quiz? {failed}")
+print (f"Is the average passing? {passing}")
+
+print(f"Raw Bonus: {bonus}")
+print(f"Bonus plus 2: {bonus_2}")
+print(f"Bonus multiply 3: {bonus_3}")
+print(f"Bonus minus 1: {bonus_4}")
