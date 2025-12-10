@@ -1,0 +1,25 @@
+"""
+NOTE
+the product of modulo is also called a remainder
+the product of floor division is also called interger quotient
+"""
+
+value_1 = float(input("Input the first valaue number: "))
+value_2 = float(input("Input the second value number: "))
+
+sum = value_1 + value_2
+difference = value_1 - value_2
+product = value_1 * value_2
+quotient = value_1 / value_2 
+remainder = value_1 % value_2 
+integer_quotient = value_1 // value_2 
+exponential = value_1 ** value_2 
+
+print ("\n ---Value Result---")
+print (f"Sum: {sum}")
+print (f"Subtraction: {difference}")
+print (f"Multiplication: {product}")
+print (f"Division: {quotient}")
+print (f"Modulo: {remainder}")
+print (f"Floor Division: {integer_quotient}")
+print (f"Exponent: {exponential}")
